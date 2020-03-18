@@ -11,19 +11,19 @@
 // 	}
 // });
 
-// gsap.from(".ball", { duration: 2, opacity: 0, y: 150, stagger: 0.25 });
+gsap.from(".ball", { duration: 2, y: 150, stagger: 0.25 });
 
-gsap.to(".ball", { duration: 2, x: 400, rotate: 200, ease: "bounce", delay: 3, onStart: beginAnim, onUpdate: inProgress, onComplete: animCompleted });
+// gsap.to(".ball", { duration: 2, x: 400, rotate: 200, ease: "bounce", delay: 3, onStart: beginAnim, onUpdate: inProgress, onComplete: animCompleted });
 
-function beginAnim() {
-	console.log("animation started");
-}
+// function beginAnim() {
+// 	console.log("animation started");
+// }
 
-function inProgress() {
-	console.log("in progress");
-}
+// function inProgress() {
+// 	console.log("in progress");
+// }
 
-function animCompleted() {
-	console.log("done!");
-	gsap.to(".ball", { duration: 4, scale: 0.1 });
-}
+// function animCompleted() {
+// 	console.log("done!");
+// 	gsap.to(".ball", { duration: 4, scale: 0.1 });
+// }

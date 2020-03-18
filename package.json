@@ -4,7 +4,7 @@
 	"description": "Wowza animation!",
 	"main": "beachball.js",
 	"scripts": {
-		"start": "parcel beachball.html --open",
+		"start": "parcel multiballs.html --open",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "parcel build *.html --public-url ./"
 	},

@@ -11,7 +11,7 @@
 // 	}
 // });
 
-gsap.from(".ball", { duration: 2, y: 150, stagger: 0.25 });
+// gsap.from(".ball", { duration: 2, y: 150, stagger: 0.25 });
 
 // gsap.to(".ball", { duration: 2, x: 400, rotate: 200, ease: "bounce", delay: 3, onStart: beginAnim, onUpdate: inProgress, onComplete: animCompleted });
 
@@ -27,3 +27,11 @@ gsap.from(".ball", { duration: 2, y: 150, stagger: 0.25 });
 // 	console.log("done!");
 // 	gsap.to(".ball", { duration: 4, scale: 0.1 });
 // }
+
+gsap.set(".ball", { scale: 1 });
+
+const tl = gsap.timeline();
+
+tl.to(".ball", { duration: 2, x: 400 })
+	.to(".ball", { duration: 2, scale: 0.3 })
+	.to(".ball", { duration: 2, y: -1000, x: 2000 });

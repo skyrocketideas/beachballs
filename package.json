@@ -1,13 +1,16 @@
 {
-  "name": "gsap_exercise",
-  "version": "0.0.1",
-  "description": "Wowza animation!",
-  "main": "beachball.js",
-  "scripts": {
-    "start": "parcel *.html --open",
+	"name": "gsap_exercise",
+	"version": "0.0.1",
+	"description": "Wowza animation!",
+	"main": "beachball.js",
+	"scripts": {
+		"start": "parcel *.html --open",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "parcel build *.html --public-url ./"
-  },
-  "author": "Me",
-  "license": "ISC"
+	},
+	"author": "Me",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4"
+	}
 }
